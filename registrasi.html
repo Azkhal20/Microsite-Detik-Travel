@@ -16,7 +16,7 @@
         background-image: url(asset/bg-registrasi.png);
         background-size: cover;
         background-repeat: no-repeat;
-        height: 130vh;
+        height: 165vh;
         background-position: center;
     }
   </style>
@@ -63,33 +63,43 @@
                 </div>
                 <div class="form-wrapper">
                     <form action="">
-                        <div class="mb-3">
+                        <div class="mb-1">
                             <label for="name" class="form-label"></label>
                             <input placeholder="Nama Lengkap*" type="text" class="form-control" id="name" required>
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-1">
                             <label for="email" class="form-label"></label>
                             <input placeholder="Email*" type="email" class="form-control" id="email" required>
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-1">
                             <label for="tel" class="form-label"></label>
                             <input type="tel" placeholder="Nomor Telepon*" class="form-control" id="tel">
                         </div>
-                        <div class="mb-3">
+                        <p class="form-warning">Isi hanya angka</p>
+                        <div class="mb-4">
                             <label for="exampleFormControlTextarea1" class="form-label"></label>
-                            <textarea placeholder="Alasan mengikuti program “Explore Thailand by Detiktravel”*" class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                            <textarea placeholder="Alasan mengikuti program “Explore Thailand by Detiktravel”*" class="form-control" id="exampleFormControlTextarea1" rows="4" required></textarea>
                           </div>
-                        <div class="mb-3">
-                            <label for=""></label>
-                            <input type="image">
+                        <div class="desc-wrapper mb-1">
+                            <input type="image" class="form-img" id="form-img">
+                            <p class="form-desc">
+                                1. Format file: .png, .jpg, .jpeg <br>
+                                2. Maksimal ukuran file 1MB <br>
+                                3. Disarankan foto mencakup 3:4 badan
+                            </p>
                         </div>
-
-                        <div class="form-check mb-3">
+                        
+                        <div class="mb-3">
+                            <label for="link" class="form-label"></label>
+                            <input placeholder="Link Instagram*" type="text" class="form-control" id="link" required>
+                        </div>
+                        <p class="form-warning">Contoh: https://www.instagram.com/yourusername</p>
+                        <div class="form-check mb-4">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                             <label class="form-check-label" for="flexCheckDefault">
-                                Dengan menekan tombol "Daftar", Saya menyetujui <span style="color: #00D1FF;">syarat dan ketentuan</span> yang berlaku                            </label>
+                                Dengan menekan tombol "Daftar", Saya menyetujui <span style="color: #00D1FF;">syarat dan ketentuan</span> yang berlaku             
+                            </label>
                         </div>
-
                         <button type="submit" class="btn btn-form">Daftar</button>
                     </form>
                 </div>
